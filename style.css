@@ -1,0 +1,198 @@
+
+/* Basic settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* Navigation bar */
+header {
+    background-color: #ffffff;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+header h2 {
+    color: #4f46e5;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #334155;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4f46e5;
+}
+
+/* Home section */
+.home {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #eef2ff;
+}
+
+.home h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.home h1 span {
+    color: #4f46e5;
+}
+
+.home h3 {
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.home p {
+    max-width: 550px;
+    margin: 0 auto 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #4f46e5;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #3730a3;
+}
+
+/* Common sections */
+section {
+    padding: 55px 8%;
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: #4f46e5;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#about p {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Education and project cards */
+.card {
+    background-color: white;
+    padding: 22px;
+    margin: 15px auto;
+    max-width: 750px;
+    border-radius: 8px;
+    border-left: 4px solid #4f46e5;
+    box-shadow: 0 3px 12px #0000000a;
+}
+
+.card h3 {
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+/* Skills and interests */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.skills-list span {
+    background-color: #e0e7ff;
+    color: #3730a3;
+    padding: 9px 16px;
+    border-radius: 5px;
+}
+
+#skills h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#skills > p {
+    text-align: center;
+}
+
+.note {
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* Contact section */
+#contact {
+    text-align: center;
+    background-color: #eef2ff;
+}
+
+#contact p {
+    margin: 12px 0;
+}
+
+#contact a {
+    color: #4f46e5;
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Mobile-friendly design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home {
+        padding: 70px 18px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 40px 18px;
+    }
+}
